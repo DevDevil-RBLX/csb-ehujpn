@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DevEncrypted Portal</title>
+    <script>
+      function showLinks() {
+        var inputCode = document.getElementById("secret-code").value;
+        if (inputCode === "devdevil") {
+          document.getElementById("links-list").style.display = "block";
+          setTimeout(function () {
+            document.getElementById("links-list").style.display = "none";
+          }, 10000); // 10 seconds
+        } else {
+          alert("Incorrect code, please try again.");
+        }
+      }
+    </script>
+    <style>
+      #secret-links {
+        display: none;
+      }
+
+      input[type="password"] {
+        letter-spacing: 3px;
+        font-size: 14px;
+      }
+
+      button {
+        font-size: 14px;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh; /* Adjust height to move content up */
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: normal;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      ul {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>DevEncrypted Portal</h1>
+        <input type="password" id="secret-code" />
+        <button onclick="showLinks()">Show Links</button>
+        <ul id="links-list" style="display: none;">
+          <li>
+            <a href="https://www.example.com/secret-link-1">Secret Link 1</a>
+          </li>
+          <li>
+            <a href="https://www.example.com/secret-link-2">Secret Link 2</a>
+          </li>
+          <li>
+            <a href="https://www.example.com/secret-link-3">Secret Link 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

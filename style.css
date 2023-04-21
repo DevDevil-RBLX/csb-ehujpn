@@ -1,0 +1,8 @@
+#secret-links {
+  display: none;
+}
+
+input[type="password"] {
+  letter-spacing: 50px;
+  font-size: 20px;
+}
